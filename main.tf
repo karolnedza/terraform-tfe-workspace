@@ -23,18 +23,6 @@ resource "tfe_workspace" "managed" {
 }
 
 
-data "tfe_workspace" "default" {
-  name         = "inputs"
-  organization = "greencloud"
-}
-
-resource "tfe_run_trigger" "default" {
-  workspace_id  = tfe_workspace.managed.id
-  sourceable_id = data.tfe_workspace.default.id
-}
-
-
-
 resource "tfe_variable" "environment" {
   for_each = lookup(var.variables, "environment", {})
 
