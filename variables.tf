@@ -18,7 +18,7 @@ variable "file_triggers_enabled" {
 
 variable "queue_all_runs" {
   description = "Whether all runs should be queued. When set to false, runs triggered by a VCS change will not be queued until at least one run is manually queued."
-  default     = true
+  default     = false
 }
 
 variable "ssh_key_id" {
