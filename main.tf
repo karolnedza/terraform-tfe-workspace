@@ -24,7 +24,7 @@ resource "tfe_workspace" "managed" {
 
 
 data "tfe_workspace" "default" {
-  name         = "input"
+  name         = "inputs"
   organization = "greencloud"
 }
 
