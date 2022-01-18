@@ -8,7 +8,7 @@ variable "organization" {
 
 variable "auto_apply" {
   description = "Whether to automatically apply changes when a Terraform plan is successful."
-  default     = false
+  default     = true
 }
 
 variable "file_triggers_enabled" {
