@@ -28,7 +28,7 @@ variable "ssh_key_id" {
 
 variable "terraform_version" {
   description = "The version of Terraform to use for this workspace."
-  default     = "1.0.0"
+  default     = "1.2.7"
 }
 
 variable "trigger_prefixes" {
